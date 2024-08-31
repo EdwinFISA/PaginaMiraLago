@@ -267,7 +267,7 @@ background-image: linear-gradient(
     background-image: url(images/mision.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:cover;
     width: 50%;
 }
 
@@ -320,7 +320,7 @@ p {
 
 .footer {
     padding: 100px 0;
-    background-color: #000000b2;
+    background-color: #323337;
 }
 
 .footer-content {
