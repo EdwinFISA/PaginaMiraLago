@@ -1,0 +1,959 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(images/bg.jpg);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100%; /* Hace que el logo sea responsive */
+    max-width: 150px; /* Tamaño máximo en pantallas grandes */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu .navbar ul li a:hover {
+color: #CE967B;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 70px;
+    line-height: 80px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin: 50px 0px 0px 0px;
+}
+
+.header-content p {
+    font-size: 20px;
+    color: #C5C5C5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #CE967B;
+    color: #F9FAFC;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: #EBAD8D;
+}
+
+.rest {
+    padding: 100px 0;
+    background-color: #E1E2E6;
+    position: relative;
+}
+
+.rest-content {
+    text-align: center;
+}
+
+.rest-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #0c0d11;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p {
+    font-size: 16px;
+    color: #414247;
+    pad: 0 250px;
+    margin-bottom: 35px;
+}
+
+.rest-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.rest-1 {
+    padding: 0 25px;
+}
+
+.rest-1 img {
+    width: 200px;
+}
+
+.rest-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.rest-1 h3 {
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Asegúrate de que el contenedor tenga una altura definida */
+}
+
+/* Estilos del Carrusel */
+.carousel-caption h3 {
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-caption p {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    color: #FFFDFC;
+}
+
+/* Asegura que las imágenes del carrusel tengan el mismo tamaño */
+.carousel-item img {
+height: 90vh;
+background-repeat: repeat;
+background-size: contain;
+background-position: center;
+object-fit: contain;
+background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(images/fondocaru.jfif);
+}
+/*
+.carousel-item img {
+    width: 100%;
+    height: 500px;  Ajusta la altura según tus necesidades 
+    object-fit: cover;  Mantiene la imagen dentro del contenedor sin distorsionar 
+}*/
+
+.services {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(/images/services.jfif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.services-content {
+    text-align: center;
+}
+
+.services-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.services-content p {
+    font-size: 16px;
+    color: #C5C5C5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.services-group {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.services-1 {
+    padding: 0 100px;
+}
+
+.services-1 img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.services-1 h3 {
+    color: #EACCB3;
+    font-size: 18px;
+}
+
+.general {
+    display: flex;
+}
+
+.general-1{
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #E1E2E6;
+}
+
+.general-2 {
+    background-image: url(images/mision.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 50%;
+}
+
+.general-3 {
+    background-image: url(images/vision.jfif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+}
+
+.blog {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-1 {
+    padding: 15px 55px;
+}
+
+.blog-1 img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.blog-1 h3 {
+    font-size: 25px;
+    color: #323337; 
+}
+
+.footer {
+    padding: 100px 0;
+    background-color: #323337;
+}
+
+.footer-content {
+    display: flex;
+    justify-content:space-around;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin: 70px 10px 10px 10px;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: #F9FAFC;
+    margin-bottom: 15px;
+    text-align: center;
+    justify-content: space-around;
+    margin:30px 0 5px 0;
+}
+
+.link a {
+    font-size: 16px;
+    color: #C5C5C5;
+    display: block;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+  /* Estilo del iframe */
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Iconos */
+.social-icon {
+    text-decoration: none;
+    color: #000; /* Color del icono */
+    font-size: 30px; /* Tamaño del icono */
+    transition: color 0.3s; /* Efecto de transición para el color */
+}
+
+.social-icon:hover {
+    color: #007bff; /* Color del icono al pasar el ratón */
+}
+
+.video-container {
+    position:relative;
+    width: 100%;
+    padding-bottom: 177.78%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+  /* Estilo del iframe */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: auto;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+
+    .rest {
+        padding: 30px;
+    }
+
+    .rest-content h2 {
+        padding: 0;
+    }
+
+    .txt-p {
+        padding: 0;
+    }
+
+    .rest-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .rest-img {
+        display: none;
+    }
+
+    .services {
+        padding: 30px;
+    }
+
+    .services-content p {
+        padding: 0;
+    }
+
+    .services-group {
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .services-1 {
+        margin-bottom: 25px;
+    }
+
+    .general {
+        flex-direction: column;
+    }
+
+    .general-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .general-2, .general-3 {
+        display: none;
+    }
+
+    .blog {
+        padding: 30px;
+    }
+
+    .blog-content {
+        flex-direction: column;
+    }
+
+    .blog-1 {
+        padding: 0;
+    }
+
+    .footer {
+        padding: 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .iframe-container {
+        padding-bottom: 56.25%; /* Mantener proporción 16:9 */
+    }
+    
+    .carousel-item img {
+        max-width: 100%;
+        height: auto; /* Ajusta la altura según tus necesidades */
+        object-fit: cover; /* Mantiene la imagen dentro del contenedor sin distorsionar */
+    }
+
+    .video-container {
+        padding-bottom: 150%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 60px;
+        line-height: 55px;
+        margin: 20px 0 20px 0;
+    }
+
+    .header {
+        min-height: auto;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+    
+    .logo {
+        max-width: 75px; /* Reduce el tamaño del logo en pantallas medianas */
+    }
+    
+    .iframe-container {
+        padding-bottom: 56.25%; /* Mantener proporción 16:9 */
+    }
+
+    /* Estilos del Carrusel */
+.carousel-caption h3 {
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-caption p {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    color: #FFFDFC;
+}
+
+/* Asegura que las imágenes del carrusel tengan el mismo tamaño */
+.carousel-item img {
+    width: 100%;
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Mantiene la imagen dentro del contenedor sin distorsionar */
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 177.78%; /* Esto crea una relación de aspecto 9:16 (16/9 = 1.7778 = 177.78%) */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000; /* Opcional: fondo negro antes de que cargue el video */
+    border-radius: 15px; /* Opcional: agrega bordes redondeados */
+}
+
+.video-container {
+    padding-bottom: 125%;
+}
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .header {
+        min-height: auto;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+
+    .logo {
+        max-width: 75px; /* Reduce el tamaño del logo en pantallas medianas */
+    }
+
+    .iframe-container {
+        padding-bottom: 75%; /* Cambiar a proporción 4:3 si es necesario */
+    }
+
+    /* Estilos del Carrusel */
+.carousel-caption h3 {
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-caption p {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    color: #FFFDFC;
+}
+
+/* Asegura que las imágenes del carrusel tengan el mismo tamaño */
+.carousel-item img {
+    width: 100%;
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Mantiene la imagen dentro del contenedor sin distorsionar */
+}
+
+.video-container {
+    padding-bottom: 100%;
+}
+}
+
+/* Estilos generales */
+.cards.container {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.cards h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cards p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Contenedor de las tarjetas */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Estilos de cada tarjeta */
+.card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Título y descripción de cada tarjeta */
+.card h3 {
+    font-size: 1.6em;
+    color: #333;
+    margin: 20px 0;
+}
+
+.card p {
+    font-size: 1.1em;
+    color: #777;
+    padding: 0 20px 20px 20px;
+}
+
+/* Superposición para mostrar el botón "Ver más" */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    border-radius: 10px;
+}
+
+.card.active .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn-card {
+    background-color: #6f4f1f; /* Color café */
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-card:hover {
+    background-color: #5a3e1c;
+}
+
+/* Responsividad: ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .card img {
+        height: 250px;
+    }
+
+    .card h3 {
+        font-size: 1.4em;
+    }
+
+    .card p {
+        font-size: 1em;
+    }
+
+    .btn-card {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/**/
+/* Estilos para las tarjetas */
+.card {
+    position: relative;
+    width: 300px;
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+  .ver-mas {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #6f4f1f; /* Color café */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .ver-mas:hover {
+    background-color: #4f372f; /* Color más oscuro cuando el botón se pasa por encima */
+  }
+  
+  /* Efecto de difuminado en el fondo */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: none; /* Oculto por defecto */
+  }
+  
+  @media (max-width: 1200px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .header-content h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .header-content p {
+        font-size: 18px;
+        padding: 0 150px;
+    }
+}
+
+@media (max-width: 992px) {
+    .services-group {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .rest-group {
+        flex-direction: column;
+    }
+
+    .rest-1, .rest-2, .rest-3 {
+        margin-bottom: 30px;
+    }
+
+    .general-1, .general-2, .general-3 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .header-content h1 {
+        font-size: 40px;
+    }
+
+    .header-content p {
+        font-size: 16px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu .navbar {
+        position: relative;
+        background-color: #343a40;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu #menu:checked ~ .navbar {
+        height: auto;
+    }
+
+    .header-content h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .header-content p {
+        font-size: 14px;
+        padding: 0 50px;
+    }
+
+    .blog-1 {
+        padding: 10px 30px;
+    }
+
+    .services-group {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icon {
+        font-size: 24px;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu .navbar ul li a {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .header-content h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .header-content p {
+        font-size: 12px;
+        padding: 0 30px;
+    }
+
+    .rest-content h2 {
+        font-size: 40px;
+    }
+
+    .rest-content p {
+        font-size: 14px;
+    }
+
+    .general-1, .general-2, .general-3 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .blog-1 {
+        padding: 5px 20px;
+    }
+
+    .services-1 h3 {
+        font-size: 16px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+    }
+}
+
